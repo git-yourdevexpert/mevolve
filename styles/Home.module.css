@@ -25,7 +25,9 @@
 .video-btn {
   @apply px-78;
 }
-
+.video-btn img {
+  @apply inline-block mr-20;
+}
 
 header .sitettl {
   @apply text-fs30 text-white font-light;

@@ -16,6 +16,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(764);
 /* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_globals_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _styles_custom_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(897);
+/* harmony import */ var _styles_custom_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_custom_css__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 function App({ Component , pageProps  }) {
@@ -23,6 +26,13 @@ function App({ Component , pageProps  }) {
         ...pageProps
     });
 }
+
+
+/***/ }),
+
+/***/ 897:
+/***/ (() => {
+
 
 
 /***/ }),

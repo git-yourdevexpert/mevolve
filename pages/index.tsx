@@ -5,7 +5,6 @@ import profilePic from "../public/calender-icon.svg";
 import refershicon from "../public/refresh-icon.svg";
 import notbookicon from "../public/notbook-icon.svg";
 import notebook1icon from "../public/notebook1-icon.svg";
-import switchicon from "../public/switch.svg";
 import listicon from "../public/list-icon.svg";
 import playicon from "../public/play-icon.svg";
 import anroidapp from "../public/anroid-app.png";
@@ -15,7 +14,6 @@ import iphonepic from "../public/iPhone13ProMax.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useState } from "react";
 import Accordion from "../Components/Accordion/Accordion";
 import styles from "../styles/Home.module.css";
 
@@ -23,12 +21,6 @@ export default function Home() {
   var settings = {
     dots: true,
   };
-  const [open, setOpen] = useState(1);
-
-  const handleOpen = (value) => {
-    setOpen(open === value ? 0 : value);
-  };
-
   return (
     <div className={styles.body}>
       <Head>

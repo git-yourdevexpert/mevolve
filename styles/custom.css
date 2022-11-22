@@ -23,3 +23,8 @@
 .slick-dots li button:before {
   display: none !important;
 }
+
+.video-btn img {
+  margin-right: 20px !important;
+  display: inline-block !important;
+}

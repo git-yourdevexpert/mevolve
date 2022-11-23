@@ -30,7 +30,7 @@ const AccordionLayout = ({
           onClick={() => handleSetIndex(index)}
           className="flex w-full items-center"
         >
-          <div className="flex w-full items-center py-15 lg:pb-11 px-20 md:pb-5">
+          <div className="flex w-full items-center py-15 lg:pb-11 px-20 md:pb-5 cursor-pointer">
             <div className="mr-20">
               {activeIndex === index ? (
                 <Image src={buleIcon} alt="Picture of the author" />

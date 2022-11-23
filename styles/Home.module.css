@@ -21,10 +21,10 @@
 
 .applist .box {
   width: 152px;
-  @apply bg-white py-30 lg:py-20 md:py-35 px-15 text-center rounded-6 md:shadow-shadow-two;
+  @apply bg-white pt-20 pb-14 lg:py-20 md:py-35 px-15 text-center rounded-6 md:shadow-shadow-two;
 }
 .applist .box img {
-  @apply mx-auto mb-20;
+  @apply mx-auto mb-15;
 }
 .applist .box span {
   @apply block text-fs16 lg:text-fs14 font-medium;

@@ -61,28 +61,28 @@ export default function Home() {
           <h2 className="text-fs20 text-lbalck text-center lg:text-fs16 lg:mb-20">
             One App To Rule Them All
           </h2>
-          <div
-            className={`flex justify-between	md:flex-wrap md:justify-center ${styles.container}`}
-          >
-            <div className={styles.box}>
-              <Image src={profilePic} alt="To-Do List" />
-              <span>To-Do List</span>
-            </div>
-            <div className={styles.box}>
-              <Image src={refershicon} alt="Habit Tracker" />
-              <span>Habit Tracker</span>
-            </div>
-            <div className={styles.box}>
-              <Image src={notbookicon} alt="Journaling" />
-              <span>Journaling</span>
-            </div>
-            <div className={styles.box}>
-              <Image src={notebook1icon} alt="Notes" />
-              <span>Notes</span>
-            </div>
-            <div className={styles.box}>
-              <Image src={listicon} alt="List" />
-              <span>List</span>
+          <div className={styles.container}>
+            <div className="flex justify-between md:flex-wrap md:justify-center -mx-5">
+              <div className={styles.box}>
+                <Image src={profilePic} alt="To-Do List" />
+                <span>To-Do List</span>
+              </div>
+              <div className={styles.box}>
+                <Image src={refershicon} alt="Habit Tracker" />
+                <span>Habit Tracker</span>
+              </div>
+              <div className={styles.box}>
+                <Image src={notbookicon} alt="Journaling" />
+                <span>Journaling</span>
+              </div>
+              <div className={styles.box}>
+                <Image src={notebook1icon} alt="Notes" />
+                <span>Notes</span>
+              </div>
+              <div className={styles.box}>
+                <Image src={listicon} alt="List" />
+                <span>List</span>
+              </div>
             </div>
           </div>
         </div>

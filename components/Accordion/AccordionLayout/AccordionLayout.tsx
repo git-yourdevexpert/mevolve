@@ -58,7 +58,7 @@ const AccordionLayout = ({
         </div>
 
         {activeIndex === index && (
-          <div className="text-gray text-fs20 lg:text-base2 pt-0 pr-30 pb-12 lg:pb-15 pl-65 md:pl-60 md:pb-24 w-full">
+          <div className="text-gray text-fs20 lg:text-base2 pt-0 pr-30 pb-12 lg:pb-15 pl-65 md:pl-60 md:pb-24  w-full">
             {children}
           </div>
         )}

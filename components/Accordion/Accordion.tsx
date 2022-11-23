@@ -66,7 +66,7 @@ const Accordion = () => {
                 <Image
                   src={todos}
                   alt="Turn Off-On the features"
-                  className="hidden md:block mt-24"
+                  className="hidden md:block mt-26"
                 />
               </AccordionLayout>
 
@@ -83,7 +83,7 @@ const Accordion = () => {
                 <Image
                   src={features}
                   alt="Light and Dark mode"
-                  className="hidden md:block  mt-24"
+                  className="hidden md:block  mt-26"
                 />
               </AccordionLayout>
 
@@ -100,12 +100,12 @@ const Accordion = () => {
                 <Image
                   src={multithemecolor}
                   alt="Multi theme colors"
-                  className="hidden md:block  mt-24"
+                  className="hidden md:block  mt-26"
                 />
                 <Image
                   src={multithemecolorone}
                   alt="Multi theme colors"
-                  className="hidden md:block  ml-40 -mt-20"
+                  className="hidden md:block  ml-10 -mt-20"
                 />
               </AccordionLayout>
             </div>

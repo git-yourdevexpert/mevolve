@@ -43,6 +43,31 @@ h2 {
   @apply text-fs16 md:leading-24;
 }
 
+.textsm,
+.textsm p {
+  @apply text-fs16;
+}
+
+.mx338 {
+  max-width: 338px;
+  @apply mx-auto;
+}
+
+.btn {
+  @apply text-base text-white bg-blue hover:bg-gray inline-block py-14 px-96 capitalize rounded-6 transition-all duration-300;
+}
+.video-btn {
+  @apply px-78 lg:px-56;
+}
+.video-btn img {
+  margin-right: 20px !important;
+  display: inline-block !important;
+}
+
+.main {
+  @apply block m-0 p-0;
+}
+
 @screen lg {
   .container {
     max-width: 870px;

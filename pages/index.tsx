@@ -14,11 +14,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Accordion from "../components/Accordion/Accordion";
+import Banner from "../components/Banner/Banner";
 import Header from "../components/Header/header";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-  var settings = {
+  const settings = {
     dots: true,
   };
 
@@ -35,80 +36,31 @@ export default function Home() {
           <div className="py-50 lg:py-39">
             <Slider {...settings}>
               <div>
-                <div className="grid grid-cols-12 gap-4 md:flex md:flex-col-reverse	 items-center">
-                  <div className="col-span-6 md:col-span-12 md:mb-30 text-center ">
-                    <h1>Automate self-development</h1>
-                    <div
-                      className={`text-dgray1 mb-30  md:mb-29 ${styles.textsm}`}
-                    >
-                      Evolve daily by efficiently managing your time, thoughts,
-                      tasks and routines in a simple app.
-                    </div>
-                    <div className={styles.btnrow}>
-                      <a
-                        href="#"
-                        className={`${styles["btn"]} ${styles["video-btn"]}`}
-                      >
-                        <Image
-                          src={playicon}
-                          alt="Picture of the author"
-                          className="inline-block"
-                        />
-                        watch video
-                      </a>
-                    </div>
-                    <div
-                      className={`flex justify-between mt-30 lg:mt-22 ${styles["mx338"]}`}
-                    >
-                      <Image
-                        src={appleapp}
-                        alt="
-                      Apple app"
-                      />
-                      <Image src={anroidapp} alt="google play app" />
-                    </div>
-                  </div>
-                  <div className="col-span-6 md:col-span-12 text-center">
-                    <Image src={bannerimg} alt="google play app" />
-                  </div>
-                </div>
+                <Banner
+                  title="Automate self-development"
+                  children="Evolve daily by efficiently managing your time, thoughts,
+                      tasks and routines in a simple app."
+                  bannerimg={bannerimg}
+                />
               </div>
               <div>
-                <div className="grid grid-cols-12 gap-4 items-center md:flex md:flex-col-reverse">
-                  <div className="col-span-6 text-center ">
-                    <h2 className="text-fs20 lg:text-fs16">
-                      Automate self-development
-                    </h2>
-                    <div className={`text-dgray1 mb-30 ${styles.textsm}`}>
-                      Evolve daily by efficiently managing your time, thoughts,
-                      tasks and routines in a simple app.
-                    </div>
-                    <div className={styles.btnrow}>
-                      <a
-                        href="#"
-                        className={`${styles["btn"]} ${styles["video-btn"]}`}
-                      >
-                        <Image src={playicon} alt="Picture of the author" />
-                        watch video
-                      </a>
-                    </div>
-                    <div
-                      className={`flex justify-between mt-30 ${styles["mx338"]}`}
-                    >
-                      <Image
-                        src={appleapp}
-                        alt="
-                      Apple app"
-                      />
-                      <Image src={anroidapp} alt="google play app" />
-                    </div>
-                  </div>
-                  <div className="col-span-6 text-center">
-                    <Image src={bannerimg} alt="google play app" />
-                  </div>
-                </div>
+                <Banner
+                  title="Automate self-development"
+                  children="Evolve daily by efficiently managing your time, thoughts,
+                      tasks and routines in a simple app."
+                  bannerimg={bannerimg}
+                />
               </div>
               <div>
+                <Banner
+                  title="Automate self-development"
+                  children="Evolve daily by efficiently managing your time, thoughts,
+                      tasks and routines in a simple app."
+                  bannerimg={bannerimg}
+                />
+              </div>
+
+              {/* <div>
                 <div className="grid grid-cols-12 gap-4 items-center md:flex md:flex-col-reverse">
                   <div className="col-span-6 text-center ">
                     <h1>Automate self-development</h1>
@@ -121,7 +73,7 @@ export default function Home() {
                         href="#"
                         className={`${styles["btn"]} ${styles["video-btn"]}`}
                       >
-                        <Image src={playicon} alt="Picture of the author" />
+                        <Image src={playicon} alt="Watch Video" />
                         watch video
                       </a>
                     </div>
@@ -133,14 +85,14 @@ export default function Home() {
                         alt="
                       Apple app"
                       />
-                      <Image src={anroidapp} alt="google play app" />
+                      <Image src={anroidapp} alt="Download the App store" />
                     </div>
                   </div>
                   <div className="col-span-6 text-center">
-                    <Image src={bannerimg} alt="google play app" />
+                    <Image src={bannerimg} alt="Download the App store" />
                   </div>
                 </div>
-              </div>
+              </div> */}
             </Slider>
           </div>
         </div>
@@ -162,15 +114,15 @@ export default function Home() {
               <span>Habit Tracker</span>
             </div>
             <div className={styles.box}>
-              <Image src={notbookicon} alt="Picture of the author" />
+              <Image src={notbookicon} alt="Journaling" />
               <span>Journaling</span>
             </div>
             <div className={styles.box}>
-              <Image src={notebook1icon} alt="Picture of the author" />
+              <Image src={notebook1icon} alt="Notes" />
               <span>Notes</span>
             </div>
             <div className={styles.box}>
-              <Image src={listicon} alt="Picture of the author" />
+              <Image src={listicon} alt="List" />
               <span>List</span>
             </div>
           </div>

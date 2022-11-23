@@ -19,31 +19,6 @@
   }
 }
 
-.textsm,
-.textsm p {
-  @apply text-fs16;
-}
-
-.mx338 {
-  max-width: 338px;
-  @apply mx-auto;
-}
-
-.btn {
-  @apply text-base text-white bg-blue hover:bg-gray inline-block py-14 px-96 capitalize rounded-6 transition-all duration-300;
-}
-.video-btn {
-  @apply px-78 lg:px-56;
-}
-.video-btn img {
-  margin-right: 20px !important;
-  display: inline-block !important;
-}
-
-.main {
-  @apply block m-0 p-0;
-}
-
 .applist .box {
   width: 152px;
   @apply bg-white py-30 lg:py-20 md:py-35 px-15 text-center rounded-6 shadow-shadow-two;

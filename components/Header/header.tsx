@@ -1,4 +1,5 @@
 import styles from "../../styles/header.module.css";
+import Link from "next/link";
 import { useState } from "react";
 function Header() {
   const [navbar, setNavbar] = useState(false);
@@ -55,18 +56,18 @@ function Header() {
                   className={`mobheader flex md:block md:w-full z-9999 items-center ${styles.menu}`}
                 >
                   <li>
-                    <a href="#" className={styles.active}>
+                    <Link href="/" className={styles.active}>
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">Features</a>
+                    <Link href="/">Features</Link>
                   </li>
                   <li>
-                    <a href="#">Pricing</a>
+                    <Link href="/">Pricing</Link>
                   </li>
                   <li>
-                    <a href="#">Contact Us</a>
+                    <Link href="/">Contact Us</Link>
                   </li>
                 </ul>
               </div>

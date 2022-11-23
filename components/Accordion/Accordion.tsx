@@ -9,7 +9,7 @@ import themecolor from "../../public/themecolor.svg";
 import themecolorb from "../../public/themecolorb.svg";
 import features from "../../public/features.png";
 import multithemecolor from "../../public/multithemecolor.png";
-import multithemecolor1 from "../../public/multithemecolor1.png";
+import multithemecolorone from "../../public/multithemecolor1.png";
 import todos from "../../public/todos.png";
 import styles from "../../styles/accordion.module.css";
 
@@ -22,10 +22,18 @@ const Accordion = () => {
         <div className="grid grid-cols-12 gap-4 items-center py-48 lg:py-50 md:py-32">
           <div className={`col-span-4 md:hidden ${styles["leftcol"]}`}>
             {activeIndex === 1 && (
-              <Image src={todos} alt="To-Do List" className="block md:hidden" />
+              <Image
+                src={todos}
+                alt="Turn Off-On the features"
+                className="block md:hidden"
+              />
             )}
             {activeIndex === 2 && (
-              <Image src={features} alt="To-Do List" className="block" />
+              <Image
+                src={features}
+                alt="Light and Dark mode"
+                className="block"
+              />
             )}
             {activeIndex === 3 && (
               <>
@@ -36,7 +44,7 @@ const Accordion = () => {
                 />
                 <Image
                   src={multithemecolor1}
-                  alt="To-Do List"
+                  alt="Multi theme colors"
                   className="block imgtwo  ml-40 -mt-20"
                 />
               </>
@@ -57,7 +65,7 @@ const Accordion = () => {
                 consistent.
                 <Image
                   src={todos}
-                  alt="To-Do List"
+                  alt="Turn Off-On the features"
                   className="hidden md:block mt-30"
                 />
               </AccordionLayout>
@@ -74,7 +82,7 @@ const Accordion = () => {
                 consistent.
                 <Image
                   src={features}
-                  alt="To-Do List"
+                  alt="Light and Dark mode"
                   className="hidden md:block  mt-30"
                 />
               </AccordionLayout>
@@ -91,12 +99,12 @@ const Accordion = () => {
                 consistent.
                 <Image
                   src={multithemecolor}
-                  alt="To-Do List"
+                  alt="Multi theme colors"
                   className="hidden md:block  mt-30"
                 />
                 <Image
-                  src={multithemecolor1}
-                  alt="To-Do List"
+                  src={multithemecolorone}
+                  alt="Multi theme colors"
                   className="hidden md:block  ml-40 -mt-20"
                 />
               </AccordionLayout>

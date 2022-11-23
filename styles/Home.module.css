@@ -21,7 +21,7 @@
 
 .applist .box {
   width: 152px;
-  @apply bg-white py-20 lg:py-20 md:py-35 px-15 text-center rounded-6 md:shadow-shadow-two;
+  @apply bg-white py-20 lg:py-20 md:pt-35 md:pb-36 px-15 text-center rounded-6 md:shadow-shadow-two;
 }
 .applist .box img {
   @apply mx-auto mb-20;

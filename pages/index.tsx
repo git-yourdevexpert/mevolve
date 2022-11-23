@@ -59,7 +59,7 @@ export default function Home() {
         <div
           className={`bg-lgray pt-28 pb-32 lg:py-20 md:pt-24 md:pb-4 md:-mx-15 ${styles["applist"]}`}
         >
-          <h2 className="text-fs20 text-lbalck text-center lg:text-base lg:mb-20">
+          <h2 className="text-fs20 text-lbalck text-center lg:text-base  md:text-fs18 lg:mb-20 md:mb-24">
             One App To Rule Them All
           </h2>
           <div className={styles.container}>

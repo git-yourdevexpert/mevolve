@@ -6,9 +6,6 @@ import refershicon from "../public/refresh-icon.svg";
 import notbookicon from "../public/notbook-icon.svg";
 import notebook1icon from "../public/notebook1-icon.svg";
 import listicon from "../public/list-icon.svg";
-import playicon from "../public/play-icon.svg";
-import anroidapp from "../public/anroid-app.png";
-import appleapp from "../public/apple-app.png";
 import bannerimg from "../public/banner-img.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -22,7 +19,6 @@ export default function Home() {
   const settings = {
     dots: true,
   };
-
   return (
     <div className={styles.body}>
       <Head>
@@ -38,61 +34,24 @@ export default function Home() {
               <div>
                 <Banner
                   title="Automate self-development"
-                  children="Evolve daily by efficiently managing your time, thoughts,
-                      tasks and routines in a simple app."
+                  text="Evolve daily by efficiently managing your time, thoughts, tasks and routines in a simple app."
                   bannerimg={bannerimg}
                 />
               </div>
               <div>
                 <Banner
                   title="Automate self-development"
-                  children="Evolve daily by efficiently managing your time, thoughts,
-                      tasks and routines in a simple app."
+                  text="Evolve daily by efficiently managing your time, thoughts, tasks and routines in a simple app."
                   bannerimg={bannerimg}
                 />
               </div>
               <div>
                 <Banner
                   title="Automate self-development"
-                  children="Evolve daily by efficiently managing your time, thoughts,
-                      tasks and routines in a simple app."
+                  text="Evolve daily by efficiently managing your time, thoughts, tasks and routines in a simple app."
                   bannerimg={bannerimg}
                 />
               </div>
-
-              {/* <div>
-                <div className="grid grid-cols-12 gap-4 items-center md:flex md:flex-col-reverse">
-                  <div className="col-span-6 text-center ">
-                    <h1>Automate self-development</h1>
-                    <div className={`text-dgray1 mb-30 ${styles.textsm}`}>
-                      Evolve daily by efficiently managing your time, thoughts,
-                      tasks and routines in a simple app.
-                    </div>
-                    <div className={styles.btnrow}>
-                      <a
-                        href="#"
-                        className={`${styles["btn"]} ${styles["video-btn"]}`}
-                      >
-                        <Image src={playicon} alt="Watch Video" />
-                        watch video
-                      </a>
-                    </div>
-                    <div
-                      className={`flex justify-between mt-30 ${styles["mx338"]}`}
-                    >
-                      <Image
-                        src={appleapp}
-                        alt="
-                      Apple app"
-                      />
-                      <Image src={anroidapp} alt="Download the App store" />
-                    </div>
-                  </div>
-                  <div className="col-span-6 text-center">
-                    <Image src={bannerimg} alt="Download the App store" />
-                  </div>
-                </div>
-              </div> */}
             </Slider>
           </div>
         </div>

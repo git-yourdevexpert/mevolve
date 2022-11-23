@@ -5,11 +5,11 @@ import anroidapp from "../../public/anroid-app.png";
 
 function Banner({
   title,
-  children,
+  text,
   bannerimg,
 }: {
   title: any;
-  children: any;
+  text: any;
   bannerimg: any;
 }) {
   return (
@@ -17,7 +17,7 @@ function Banner({
       <div className="grid grid-cols-12 gap-4 md:flex md:flex-col-reverse	 items-center">
         <div className="col-span-6 md:col-span-12 md:mb-30 text-center ">
           <h1>{title}</h1>
-          <div className="text-dgray1 mb-30  md:mb-29  textsm">{children}</div>
+          <div className="text-dgray1 mb-30  md:mb-29  textsm">{text}</div>
           <div className="btnrow">
             <a href="#" className="btn video-btn">
               <Image

@@ -1,0 +1,3 @@
+.twocol .leftcol img {
+  @apply shadow-shadow-two;
+}

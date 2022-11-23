@@ -1,0 +1,20 @@
+header .sitettl {
+  @apply text-fs30 text-white font-light;
+}
+header .sitettl b {
+  @apply font-bold;
+}
+header .menu li {
+  @apply text-fs14 text-white font-regular ml-40;
+}
+header .menu li a {
+  @apply text-white inline-block pt-26 pb-28 relative;
+}
+header .menu li a:after {
+  content: "";
+  @apply absolute bottom-0 left-0 w-0 h-6 bg-white rounded-t-3 transition-all duration-300;
+}
+header .menu li a.active:after,
+header .menu li a:hover:after {
+  @apply w-full;
+}

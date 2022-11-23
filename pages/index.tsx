@@ -13,8 +13,8 @@ import bannerimg from "../public/banner-img.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Accordion from "../Components/Accordion/Accordion";
-import Header from "../Components/Header/header";
+import Accordion from "../components/Accordion/Accordion";
+import Header from "../components/Header/header";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -32,13 +32,15 @@ export default function Home() {
       <Header />
       <main className={styles.main}>
         <div className={styles.container}>
-          <div className="pt-75 pb-99 lg:py-39">
+          <div className="py-50 lg:py-39">
             <Slider {...settings}>
               <div>
-                <div className="grid grid-cols-12 gap-4 items-center">
+                <div className="grid grid-cols-12 gap-4 md:flex md:flex-col-reverse	 items-center">
                   <div className="col-span-6 md:col-span-12 md:mb-30 text-center ">
                     <h1>Automate self-development</h1>
-                    <div className={`text-dgray1 mb-30 ${styles.textsm}`}>
+                    <div
+                      className={`text-dgray1 mb-30  md:mb-29 ${styles.textsm}`}
+                    >
                       Evolve daily by efficiently managing your time, thoughts,
                       tasks and routines in a simple app.
                     </div>
@@ -56,7 +58,7 @@ export default function Home() {
                       </a>
                     </div>
                     <div
-                      className={`flex justify-between mt-30 ${styles["mx338"]}`}
+                      className={`flex justify-between mt-30 lg:mt-22 ${styles["mx338"]}`}
                     >
                       <Image
                         src={appleapp}
@@ -72,7 +74,7 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <div className="grid grid-cols-12 gap-4 items-center ">
+                <div className="grid grid-cols-12 gap-4 items-center md:flex md:flex-col-reverse">
                   <div className="col-span-6 text-center ">
                     <h2 className="text-fs20 lg:text-fs16">
                       Automate self-development
@@ -107,7 +109,7 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <div className="grid grid-cols-12 gap-4 items-center">
+                <div className="grid grid-cols-12 gap-4 items-center md:flex md:flex-col-reverse">
                   <div className="col-span-6 text-center ">
                     <h1>Automate self-development</h1>
                     <div className={`text-dgray1 mb-30 ${styles.textsm}`}>
@@ -142,11 +144,15 @@ export default function Home() {
             </Slider>
           </div>
         </div>
-        <div className={`bg-lgray pt-28 pb-32 lg:py-20 ${styles["applist"]}`}>
+        <div
+          className={`bg-lgray pt-28 pb-32 lg:py-20 md:pt-24 md:pb-4 md:-mx-15 ${styles["applist"]}`}
+        >
           <h2 className="text-fs20 text-lbalck text-center lg:text-fs16 lg:mb-20">
             One App To Rule Them All
           </h2>
-          <div className={`flex justify-between	 ${styles.container}`}>
+          <div
+            className={`flex justify-between	md:flex-wrap md:justify-center ${styles.container}`}
+          >
             <div className={styles.box}>
               <Image src={profilePic} alt="To-Do List" />
               <span>To-Do List</span>

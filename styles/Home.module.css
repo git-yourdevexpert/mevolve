@@ -8,6 +8,21 @@
   @apply px-30 mx-auto w-full;
   max-width: 1259px;
 }
+@screen lg {
+  .container {
+    max-width: 870px;
+    @apply px-15;
+  }
+  .containerlg {
+    max-width: 932px;
+    @apply px-15;
+  }
+}
+
+.textsm,
+.textsm p {
+  @apply text-fs16;
+}
 
 .mx338 {
   max-width: 338px;
@@ -18,7 +33,7 @@
   @apply text-base text-white bg-blue hover:bg-gray inline-block py-14 px-96 capitalize rounded-6 transition-all duration-300;
 }
 .video-btn {
-  @apply px-78;
+  @apply px-78 lg:px-56;
 }
 .video-btn img {
   margin-right: 20px !important;
@@ -31,11 +46,35 @@
 
 .applist .box {
   width: 152px;
-  @apply bg-white py-30 px-15 text-center;
+  @apply bg-white py-30 lg:py-20 md:py-35 px-15 text-center rounded-6 shadow-shadow-two;
 }
 .applist .box img {
   @apply mx-auto mb-20;
 }
 .applist .box span {
-  @apply block text-fs16 font-medium;
+  @apply block text-fs16 lg:text-fs14 font-medium;
+}
+
+@screen lg {
+  .mx338 {
+    max-width: 253px;
+  }
+  .mx338 img {
+    max-width: 114px;
+  }
+  .applist .box {
+    width: 116px;
+  }
+  .applist .box img {
+    max-height: 32px;
+  }
+}
+@screen md {
+  .applist .box {
+    width: 188px;
+    @apply mx-10 mb-24;
+  }
+  .applist .box img {
+    max-height: 36px;
+  }
 }

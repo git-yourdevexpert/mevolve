@@ -11,18 +11,26 @@ const AccordionLayout = ({
   setActiveIndex,
   buleIcon,
   blackIcon,
+}: {
+  title: any;
+  children: any;
+  index: any;
+  activeIndex: any;
+  setActiveIndex: any;
+  buleIcon: any;
+  blackIcon: any;
 }) => {
-  const handleSetIndex = (index) =>
+  const handleSetIndex = (index: any) =>
     activeIndex !== index && setActiveIndex(index);
 
   return (
     <>
-      <div className="flex flex-wrap w-full items-center bg-white shadow-shadow-one rounded-6 mb-15">
+      <div className="flex flex-wrap w-full items-center bg-white shadow-shadow-one md:shadow-shadow-two rounded-6 mb-15">
         <div
           onClick={() => handleSetIndex(index)}
           className="flex w-full items-center"
         >
-          <div className="flex w-full items-center py-15 px-20">
+          <div className="flex w-full items-center py-15 lg:pb-11 px-20 md:pb-5">
             <div className="mr-20">
               {activeIndex === index ? (
                 <Image src={buleIcon} alt="Picture of the author" />
@@ -42,15 +50,15 @@ const AccordionLayout = ({
           </div>
           <div className="arrowicon">
             {activeIndex === index ? (
-              <BiChevronUp className="w-22 h-22 mr-20 active text-blue" />
+              <BiChevronUp className="w-30 h-30 mr-20 active text-blue" />
             ) : (
-              <BiChevronDown className="w-22 h-22 mr-20 " />
+              <BiChevronDown className="w-30 h-30 mr-20 " />
             )}
           </div>
         </div>
 
         {activeIndex === index && (
-          <div className="text-gray text-fs20 lg:text-fs16  pt-0 pr-30 pb-30 pl-66 w-full">
+          <div className="text-gray text-fs20 lg:text-fsbase2 pt-0 pr-30 pb-30 lg:pb-15 pl-66 w-full">
             {children}
           </div>
         )}

@@ -4,7 +4,7 @@ function Header() {
   const [navbar, setNavbar] = useState(false);
   return (
     <>
-      <header className="bg-blue">
+      <header className="bg-blue md:h-56 md:flex md:items-center z-9999 fixed top-0 left-0 w-full">
         <div className="containerlg">
           <div className="flex items-center">
             <div className="w-1/2">
@@ -18,7 +18,7 @@ function Header() {
                   {navbar ? (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-22 h-22 text-black"
+                      className="w-22 h-22 text-white"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -31,7 +31,7 @@ function Header() {
                   ) : (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-22 h-22 text-black"
+                      className="w-22 h-22 text-white"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -47,11 +47,13 @@ function Header() {
                 </button>
               </div>
               <div
-                className={`flex justify-self-center mdm:block ${
+                className={`flex justify-self-center mdm:block  ${
                   navbar ? "block" : "hidden"
                 }`}
               >
-                <ul className={`flex items-center ${styles.menu}`}>
+                <ul
+                  className={`mobheader flex md:block md:w-full z-9999 items-center ${styles.menu}`}
+                >
                   <li>
                     <a href="#" className={styles.active}>
                       Home

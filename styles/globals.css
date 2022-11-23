@@ -8,7 +8,11 @@
 
 html,
 body {
-  @apply m-0 p-0  font-roboto font-regular text-base text-lbalck;
+  @apply m-0 p-0 font-roboto font-regular text-base text-lbalck overflow-x-hidden;
+}
+
+body {
+  @apply pt-70 md:pt-56;
 }
 
 a {
@@ -17,30 +21,41 @@ a {
 }
 
 h1 {
-  @apply text-fs40 mb-30 font-bold lg:text-fs32 lg:mb-20;
+  @apply text-fs40 mb-30 font-bold lg:text-fs32 lg:mb-20 md:text-fs24 md:mb-16;
 }
 
 h2 {
-  @apply text-fs32 mb-30 font-bold lg:text-fs20;
+  @apply text-fs32 mb-30 font-bold lg:text-fs20  lg:mb-20;
 }
 
 .container {
   @apply px-30 mx-auto  w-full;
   max-width: 1084px;
-  @screen lg {
-    max-width: 836px;
-  }
 }
 
 .containerlg {
   @apply px-30 mx-auto w-full;
   max-width: 1259px;
-  @screen lg {
-    max-width: 932px;
-  }
 }
 
 .textsm,
 .textsm p {
-  @apply text-fs16;
+  @apply text-fs16 md:leading-24;
+}
+
+@screen lg {
+  .container {
+    max-width: 870px;
+    @apply px-15;
+  }
+  .containerlg {
+    max-width: 932px;
+    @apply px-15;
+  }
+}
+
+@screen md {
+  header ul {
+    @apply absolute top-full left-0 bg-blue px-16 py-0;
+  }
 }

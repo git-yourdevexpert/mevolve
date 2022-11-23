@@ -19,35 +19,31 @@ const Accordion = () => {
   return (
     <div className={`${styles["twocol"]}`}>
       <div className="container">
-        <div className="grid grid-cols-12 gap-4 items-center py-48 lg:py-50">
-          <div className={`col-span-4 ${styles["leftcol"]}`}>
+        <div className="grid grid-cols-12 gap-4 items-center py-48 lg:py-50 md:py-32">
+          <div className={`col-span-4 md:hidden ${styles["leftcol"]}`}>
             {activeIndex === 1 && (
               <Image src={todos} alt="To-Do List" className="block md:hidden" />
             )}
             {activeIndex === 2 && (
-              <Image
-                src={features}
-                alt="To-Do List"
-                className="block md:hidden"
-              />
+              <Image src={features} alt="To-Do List" className="block" />
             )}
             {activeIndex === 3 && (
               <>
                 <Image
                   src={multithemecolor}
                   alt="To-Do List"
-                  className="block md:hidden"
+                  className="block"
                 />
                 <Image
                   src={multithemecolor1}
                   alt="To-Do List"
-                  className="block md:hidden imgtwo  ml-40 -mt-20"
+                  className="block imgtwo  ml-40 -mt-20"
                 />
               </>
             )}
           </div>
-          <div className="col-span-8">
-            <h2>Customize the way you like</h2>
+          <div className="col-span-8 md:col-span-12">
+            <h2 className="md:text-center">Customize the way you like</h2>
             <div className="flex flex-wrap">
               <AccordionLayout
                 title="Turn Off-On the features"
@@ -62,7 +58,7 @@ const Accordion = () => {
                 <Image
                   src={todos}
                   alt="To-Do List"
-                  className="hidden md:block"
+                  className="hidden md:block mt-30"
                 />
               </AccordionLayout>
 
@@ -79,7 +75,7 @@ const Accordion = () => {
                 <Image
                   src={features}
                   alt="To-Do List"
-                  className="hidden md:block"
+                  className="hidden md:block  mt-30"
                 />
               </AccordionLayout>
 
@@ -96,12 +92,12 @@ const Accordion = () => {
                 <Image
                   src={multithemecolor}
                   alt="To-Do List"
-                  className="hidden md:block"
+                  className="hidden md:block  mt-30"
                 />
                 <Image
                   src={multithemecolor1}
                   alt="To-Do List"
-                  className="hidden md:block"
+                  className="hidden md:block  ml-40 -mt-20"
                 />
               </AccordionLayout>
             </div>

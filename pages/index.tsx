@@ -19,7 +19,6 @@ export default function Home() {
   const settings = {
     dots: true,
     autoplay: true,
-    lazyLoad: "ondemand",
   };
   return (
     <div className={styles.body}>

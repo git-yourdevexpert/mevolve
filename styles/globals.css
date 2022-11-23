@@ -96,4 +96,7 @@ h2 {
   .slick-dots {
     display: none !important;
   }
+  .mxw {
+    width: 117px;
+  }
 }

@@ -54,10 +54,10 @@ h2 {
 }
 
 .btn {
-  @apply text-base text-white bg-blue hover:bg-gray inline-block py-14 px-96 capitalize rounded-6 transition-all duration-300;
+  @apply text-base text-white bg-blue hover:bg-gray inline-block py-15 px-96 capitalize rounded-6 transition-all duration-300;
 }
 .video-btn {
-  @apply px-80 lg:px-56;
+  @apply px-80 lg:px-57;
 }
 .video-btn img {
   margin-right: 20px !important;
@@ -77,10 +77,23 @@ h2 {
     max-width: 932px;
     @apply px-15;
   }
+
+  .mx388 {
+    max-width: 262px;
+  }
+  .video-btn img {
+    width: 17px !important;
+  }
+  .mxw {
+    width: 108px;
+  }
 }
 
 @screen md {
   header ul {
     @apply absolute top-full left-0 bg-blue px-16 py-0;
+  }
+  .slick-dots {
+    display: none !important;
   }
 }

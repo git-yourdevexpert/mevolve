@@ -5,7 +5,7 @@ function Header() {
   const [navbar, setNavbar] = useState(false);
   return (
     <>
-      <header className="bg-blue md:h-56 md:flex md:items-center z-9999 fixed top-0 left-0 w-full">
+      <header className="bg-blue h-70 md:h-56 md:flex md:items-center z-9999 fixed top-0 left-0 w-full">
         <div className="containerlg">
           <div className="flex items-center">
             <div className="w-1/2">

@@ -18,6 +18,8 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   const settings = {
     dots: true,
+    autoplay: true,
+    lazyLoad: "ondemand",
   };
   return (
     <div className={styles.body}>
@@ -58,7 +60,7 @@ export default function Home() {
         <div
           className={`bg-lgray pt-28 pb-32 lg:py-20 md:pt-24 md:pb-4 md:-mx-15 ${styles["applist"]}`}
         >
-          <h2 className="text-fs20 text-lbalck text-center lg:text-fs16 lg:mb-20">
+          <h2 className="text-fs20 text-lbalck text-center lg:text-base lg:mb-20">
             One App To Rule Them All
           </h2>
           <div className={styles.container}>

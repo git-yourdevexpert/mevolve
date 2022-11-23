@@ -38,7 +38,7 @@ function Banner({
           </div>
         </div>
         <div className="col-span-6 md:col-span-12 text-center">
-          <Image src={bannerimg} alt="Download the App store" />
+          <Image src={bannerimg} alt="Download the App store"  width="482" height="482" layout="responsive" loading="lazy"/>
         </div>
       </div>
     </>

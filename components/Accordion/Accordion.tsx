@@ -50,7 +50,7 @@ const Accordion = () => {
               </>
             )}
           </div>
-          <div className="col-span-8 md:col-span-12 pl-10">
+          <div className="col-span-8 md:col-span-12 pl-10 md:pl-0">
             <h2 className="md:text-center">Customize the way you like</h2>
             <div className="flex flex-wrap">
               <AccordionLayout

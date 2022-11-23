@@ -19,7 +19,7 @@ function Header() {
                   {navbar ? (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-22 h-22 text-white"
+                      className="w-18 h-18 text-white"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -32,7 +32,7 @@ function Header() {
                   ) : (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-22 h-22 text-white"
+                      className="w-18 h-18 text-white"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"

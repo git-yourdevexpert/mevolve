@@ -30,7 +30,7 @@ export default function Home() {
       <Header />
       <main className={styles.main}>
         <div className={styles.container}>
-          <div className="pt-50 pb-70 lg:py-39">
+          <div className="pt-50 pb-70 lg:py-39 md:pt-44 md:pb-0">
             <Slider {...settings}>
               <div>
                 <Banner

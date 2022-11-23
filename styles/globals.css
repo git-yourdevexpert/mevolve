@@ -54,7 +54,7 @@ h2 {
 }
 
 .btn {
-  @apply text-base text-white bg-blue hover:bg-gray inline-block py-15 px-96 capitalize rounded-6 transition-all duration-300;
+  @apply text-base text-white bg-blue hover:bg-gray inline-block py-15 px-96 md:pb-16 capitalize rounded-6 transition-all duration-300;
 }
 .video-btn {
   @apply px-80 lg:px-57;

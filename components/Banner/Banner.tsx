@@ -17,7 +17,7 @@ function Banner({
       <div className="grid grid-cols-12 gap-4 md:flex md:flex-col-reverse	 items-center">
         <div className="col-span-6 md:col-span-12 md:mb-30 text-center ">
           <h1>{title}</h1>
-          <div className="text-dgray1 mb-30 lg:mb-20 md:mb-29  textsm">
+          <div className="text-dgray1 mb-30 lg:mb-20 md:mb-29 textsm md:text-base1">
             {text}
           </div>
           <div className="btnrow">

@@ -25,13 +25,13 @@ const AccordionLayout = ({
 
   return (
     <>
-      <div className="flex flex-wrap w-full items-center bg-white shadow-shadow-one md:shadow-shadow-two rounded-6 mb-15">
+      <div className="flex flex-wrap w-full items-center bg-white shadow-shadow-one md:shadow-shadow-two rounded-6 mb-30 lg:mb-24">
         <div
           onClick={() => handleSetIndex(index)}
           className="flex w-full items-center"
         >
           <div className="flex w-full items-center py-12 lg:pb-11 px-20 md:pb-5 cursor-pointer">
-            <div className="mr-20">
+            <div className="mr-20 md:mr-14">
               {activeIndex === index ? (
                 <Image src={buleIcon} alt="Icon" />
               ) : (
@@ -39,11 +39,11 @@ const AccordionLayout = ({
               )}
             </div>
             {activeIndex === index ? (
-              <div className="text-blue text-fs20 lg:text-fs16 font-medium">
+              <div className="text-blue text-fs20 lg:text-base font-medium">
                 {title}
               </div>
             ) : (
-              <div className="text-black text-fs20 lg:text-fs16  font-medium">
+              <div className="text-black text-fs20 lg:text-base  font-medium">
                 {title}
               </div>
             )}

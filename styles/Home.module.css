@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-
 .container {
   @apply px-30 mx-auto  w-full;
   max-width: 1084px;
@@ -9,14 +8,10 @@
   @apply px-30 mx-auto w-full;
   max-width: 1259px;
 }
+
 .mx338 {
   max-width: 338px;
   @apply mx-auto;
-}
-
-.textsm,
-.textsm p {
-  @apply text-fs16;
 }
 
 .btn {
@@ -29,26 +24,7 @@
   margin-right: 20px !important;
   display: inline-block !important;
 }
-header .sitettl {
-  @apply text-fs30 text-white font-light;
-}
-header .sitettl b {
-  @apply font-bold;
-}
-header .menu li {
-  @apply text-fs14 text-white font-regular ml-40;
-}
-header .menu li a {
-  @apply text-white inline-block pt-26 pb-28 relative;
-}
-header .menu li a:after {
-  content: "";
-  @apply absolute bottom-0 left-0 w-0 h-6 bg-white rounded-t-3 transition-all duration-300;
-}
-header .menu li a.active:after,
-header .menu li a:hover:after {
-  @apply w-full;
-}
+
 .main {
   @apply block m-0 p-0;
 }
@@ -62,8 +38,4 @@ header .menu li a:hover:after {
 }
 .applist .box span {
   @apply block text-fs16 font-medium;
-}
-
-.twocol .leftcol img {
-  @apply shadow-shadow-two;
 }

@@ -17,9 +17,30 @@ a {
 }
 
 h1 {
-  @apply text-fs40 mb-30 font-bold;
+  @apply text-fs40 mb-30 font-bold lg:text-fs32 lg:mb-20;
 }
 
 h2 {
-  @apply text-fs32 mb-30 font-bold;
+  @apply text-fs32 mb-30 font-bold lg:text-fs20;
+}
+
+.container {
+  @apply px-30 mx-auto  w-full;
+  max-width: 1084px;
+  @screen lg {
+    max-width: 836px;
+  }
+}
+
+.containerlg {
+  @apply px-30 mx-auto w-full;
+  max-width: 1259px;
+  @screen lg {
+    max-width: 932px;
+  }
+}
+
+.textsm,
+.textsm p {
+  @apply text-fs16;
 }

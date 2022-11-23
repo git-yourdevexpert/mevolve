@@ -17,7 +17,7 @@ const AccordionLayout = ({
 
   return (
     <>
-      <div className="flex flex-wrap w-full items-center bg-white shadow-shadow-two rounded-6 mb-15">
+      <div className="flex flex-wrap w-full items-center bg-white shadow-shadow-one rounded-6 mb-15">
         <div
           onClick={() => handleSetIndex(index)}
           className="flex w-full items-center"
@@ -31,9 +31,13 @@ const AccordionLayout = ({
               )}
             </div>
             {activeIndex === index ? (
-              <div className="text-blue text-fs20 font-medium">{title}</div>
+              <div className="text-blue text-fs20 lg:text-fs16 font-medium">
+                {title}
+              </div>
             ) : (
-              <div className="text-black text-fs20 font-medium">{title}</div>
+              <div className="text-black text-fs20 lg:text-fs16  font-medium">
+                {title}
+              </div>
             )}
           </div>
           <div className="arrowicon">
@@ -46,7 +50,7 @@ const AccordionLayout = ({
         </div>
 
         {activeIndex === index && (
-          <div className="text-gray text-fs20 pt-0 pr-30 pb-30 pl-66 w-full">
+          <div className="text-gray text-fs20 lg:text-fs16  pt-0 pr-30 pb-30 pl-66 w-full">
             {children}
           </div>
         )}

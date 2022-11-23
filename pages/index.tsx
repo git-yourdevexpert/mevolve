@@ -6,9 +6,6 @@ import refershicon from "../public/refresh-icon.svg";
 import notbookicon from "../public/notbook-icon.svg";
 import notebook1icon from "../public/notebook1-icon.svg";
 import listicon from "../public/list-icon.svg";
-import playicon from "../public/play-icon.svg";
-import anroidapp from "../public/anroid-app.png";
-import appleapp from "../public/apple-app.png";
 import bannerimg from "../public/banner-img.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -22,7 +19,6 @@ export default function Home() {
   const settings = {
     dots: true,
   };
-
   return (
     <div className={styles.body}>
       <Head>
@@ -38,24 +34,21 @@ export default function Home() {
               <div>
                 <Banner
                   title="Automate self-development"
-                  children="Evolve daily by efficiently managing your time, thoughts,
-                      tasks and routines in a simple app."
+                  text="Evolve daily by efficiently managing your time, thoughts, tasks and routines in a simple app."
                   bannerimg={bannerimg}
                 />
               </div>
               <div>
                 <Banner
                   title="Automate self-development"
-                  children="Evolve daily by efficiently managing your time, thoughts,
-                      tasks and routines in a simple app."
+                  text="Evolve daily by efficiently managing your time, thoughts, tasks and routines in a simple app."
                   bannerimg={bannerimg}
                 />
               </div>
               <div>
                 <Banner
                   title="Automate self-development"
-                  children="Evolve daily by efficiently managing your time, thoughts,
-                      tasks and routines in a simple app."
+                  text="Evolve daily by efficiently managing your time, thoughts, tasks and routines in a simple app."
                   bannerimg={bannerimg}
                 />
               </div>

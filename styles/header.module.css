@@ -1,18 +1,26 @@
 header .sitettl {
-  @apply text-fs30 text-white font-light;
+  @apply text-fs30 md:text-fs24  text-white font-light;
 }
 header .sitettl b {
   @apply font-bold;
 }
 header .menu li {
-  @apply text-fs14 text-white font-regular ml-40;
+  @apply text-fs14 md:text-fs14 text-white font-regular ml-40 md:w-full md:ml-0;
 }
 header .menu li a {
-  @apply text-white inline-block pt-26 pb-28 relative;
+  @apply text-white inline-block pt-26 pb-28 md:py-16  relative md:block;
 }
 header .menu li a:after {
   content: "";
-  @apply absolute bottom-0 left-0 w-0 h-6 bg-white rounded-t-3 transition-all duration-300;
+  @apply md:opacity-5 absolute bottom-0 left-0 w-0 h-6 md:h-px bg-white rounded-t-3 md:rounded-none transition-all duration-300 md:w-full;
+}
+header .menu li:last-child a:after {
+  @apply hidden;
+}
+
+header .menu li a.active,
+header .menu li a:hover {
+  @apply md:text-black;
 }
 header .menu li a.active:after,
 header .menu li a:hover:after {

@@ -1,3 +1,9 @@
 .twocol .leftcol img {
   @apply shadow-shadow-two;
 }
+
+@screen lg {
+  .twocol .leftcol {
+    @apply pr-50;
+  }
+}

@@ -28,7 +28,7 @@ function Banner({
               watch video
             </a>
           </div>
-          <div className={`flex justify-between mt-30 lg:mt-22 mx388`}>
+          <div className="flex justify-between mt-30 lg:mt-22 mx388">
             <Image
               src={appleapp}
               alt="

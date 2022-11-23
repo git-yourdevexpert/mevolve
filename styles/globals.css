@@ -21,11 +21,11 @@ a {
 }
 
 h1 {
-  @apply text-fs40 mb-30 font-bold lg:text-fs32 lg:mb-20 md:text-fs24 md:mb-16;
+  @apply text-fs40 mb-30 font-semibold lg:text-fs32 lg:mb-20 md:text-fs24 md:mb-16;
 }
 
 h2 {
-  @apply text-fs32 mb-30 font-bold lg:text-fs20  lg:mb-20;
+  @apply text-fs32 mb-30 font-semibold lg:text-fs20  lg:mb-20;
 }
 
 .container {
@@ -48,7 +48,7 @@ h2 {
   @apply text-fs16;
 }
 
-.mx338 {
+.mx388 {
   max-width: 338px;
   @apply mx-auto;
 }
@@ -57,7 +57,7 @@ h2 {
   @apply text-base text-white bg-blue hover:bg-gray inline-block py-14 px-96 capitalize rounded-6 transition-all duration-300;
 }
 .video-btn {
-  @apply px-78 lg:px-56;
+  @apply px-80 lg:px-56;
 }
 .video-btn img {
   margin-right: 20px !important;

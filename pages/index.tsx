@@ -33,7 +33,7 @@ export default function Home() {
       <Header />
       <main className={styles.main}>
         <div className={styles.container}>
-          <div className="py-50 lg:py-39">
+          <div className="pt-50 pb-70 lg:py-39">
             <Slider {...settings}>
               <div>
                 <Banner

@@ -43,7 +43,7 @@ const Accordion = () => {
                   className="block"
                 />
                 <Image
-                  src={multithemecolor1}
+                  src={multithemecolorone}
                   alt="Multi theme colors"
                   className="block imgtwo  ml-40 -mt-20"
                 />

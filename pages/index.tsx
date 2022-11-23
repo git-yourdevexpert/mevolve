@@ -59,40 +59,6 @@ export default function Home() {
                   bannerimg={bannerimg}
                 />
               </div>
-
-              {/* <div>
-                <div className="grid grid-cols-12 gap-4 items-center md:flex md:flex-col-reverse">
-                  <div className="col-span-6 text-center ">
-                    <h1>Automate self-development</h1>
-                    <div className={`text-dgray1 mb-30 ${styles.textsm}`}>
-                      Evolve daily by efficiently managing your time, thoughts,
-                      tasks and routines in a simple app.
-                    </div>
-                    <div className={styles.btnrow}>
-                      <a
-                        href="#"
-                        className={`${styles["btn"]} ${styles["video-btn"]}`}
-                      >
-                        <Image src={playicon} alt="Watch Video" />
-                        watch video
-                      </a>
-                    </div>
-                    <div
-                      className={`flex justify-between mt-30 ${styles["mx338"]}`}
-                    >
-                      <Image
-                        src={appleapp}
-                        alt="
-                      Apple app"
-                      />
-                      <Image src={anroidapp} alt="Download the App store" />
-                    </div>
-                  </div>
-                  <div className="col-span-6 text-center">
-                    <Image src={bannerimg} alt="Download the App store" />
-                  </div>
-                </div>
-              </div> */}
             </Slider>
           </div>
         </div>

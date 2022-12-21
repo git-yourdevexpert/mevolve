@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <div className={styles.body}>
       <Head>
-        <title>mevolve</title>
+        <title>mevolve222</title>
         <meta name="description" content="Customize the way you like" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
